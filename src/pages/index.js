@@ -22,9 +22,10 @@ const IndexPage = () => (
               node {
                 title
                 text {
-                  text
+                  json
                 }
                 publishedAt
+                id
               }
             }
           }

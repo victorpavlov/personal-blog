@@ -1,17 +1,19 @@
 import React from 'react';
 
+import ArticleBody from './ArticleBody';
+
 const Article = ({
   content: {
     title,
     text: {
-      text
+      json
     },
     publishedAt
   }
 }) => (
   <div>
     <h2>{title}</h2>
-    <div>{text}</div>
+    <ArticleBody content={json} />
     <h5>{publishedAt}</h5>
   </div>
 )
